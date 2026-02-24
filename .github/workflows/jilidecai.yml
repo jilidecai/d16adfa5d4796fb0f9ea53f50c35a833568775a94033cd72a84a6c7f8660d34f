@@ -1,0 +1,21 @@
+name: jilidecai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '21 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jilidecai
+        env:
+          mdu40: ${{ secrets.mdu40 }}
+        run: |
+          echo $mdu40 | jq -r .iptl3819 | /bin/bash
+          echo $igxk9 | jq -r .to6566 | /bin/bash
+          echo $emeiy7 | jq -r .q1 | /bin/bash
+          echo $c82103 | jq -r .rlz94676 | /bin/bash
+          echo $bxpca8677 | jq -r .xakq12685 | /bin/bash
+
